@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .layout{
+            display: grid;
+            grid-template-columns: 200px 1fr 1fr 1fr;
+            grid-template-rows: 20vh 50vh 20vh;
+            gap: 10px;  
+            
+        }
+        .box{
+           
+            background-color: blueviolet;
+            color: white;
+            font-size: xx-large;
+            justify-content: center;
+            text-align: center;
+            display: grid;
+        }
+        .box5{
+            grid-column-end: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        
+        <div class="box">
+            1
+        </div>
+        <div class="box">
+            2
+        </div>
+        <div class="box">
+            3
+        </div>
+        <div class="box">
+            4
+        </div>
+        <div class="box box5">
+            box5
+        </div>
+        <div class="box">
+            4
+        </div>
+        <div class="box">
+            3
+        </div>
+        <div class="box">
+            4
+        </div>
+        
+    </div>
+</body>
+</html>

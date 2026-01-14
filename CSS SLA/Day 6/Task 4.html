@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0%;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(3,33vh);
+            gap: 10px;
+        }
+        .container img{
+            width: 100%;
+            height: 100%;      
+        }
+        .al{
+            
+            grid-column: 2/ 2 span;
+        }
+        .wf{
+            grid-row: 2 span;
+        }
+        .ex{
+            grid-column: 3 span;
+        }
+        .an{
+            grid-column: 2 span;
+            grid-row: 2 span;
+        }
+        .cw{
+            grid-row: 2 span;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <img src="wf.jpg" alt="" class="wf">
+        <img src="an.jpg" alt="" class="an">
+        <img src="cw.jpg" alt="" class="cw">
+        <img src="ex.jpg" alt="" class="ex">
+    </div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+    *{
+        margin: 0%;
+    }
+    .layout{
+        display: grid;
+        grid-template-areas: 
+        "h h h h"
+        "s m m m"
+        "f f f f";
+        gap: 10px;
+        grid-template-rows: 10vh 82vh 5vh;
+        
+    }   
+    .head ,.sidebar ,.main ,.foot{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        font-size: x-large;
+    }
+    .head{
+        grid-area: h;
+        background-color: rgb(74, 74, 232);
+        
+    }   
+    .sidebar{
+        grid-area: s;
+        background-color: yellow;
+    }
+    .main{
+        grid-area: m;
+        background-color: green;
+    }  
+    .foot{
+        grid-area: f;
+        background-color: black;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    <div class="layout">
+
+        <div class="head">
+            Sample
+        </div>
+
+        <div class="sidebar">
+            Menu
+        </div>
+        
+        <div class="main">
+            Contents
+        </div>
+        
+        <div class="foot">
+            Footer
+        </div>
+    </div>
+</body>
+</html>

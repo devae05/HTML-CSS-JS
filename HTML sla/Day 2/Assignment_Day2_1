@@ -1,0 +1,9 @@
+Understand the difference between block-level and inline elements.
+
+Block level elements:
+    Always starts on a new line & takes the full width.
+    Style attributes like padding, margin, width & height can be set.
+
+Inline elements :
+    Uses only the space of the content length.
+    attributes like padding, margin, width & height may not work properly.

@@ -1,0 +1,57 @@
+
+body{
+    background-color: cyan;
+}
+   
+    .layout div{
+        display: grid;
+        justify-content: center;
+        align-items: center;     
+        border : 1px solid black;
+        background-color: cyan;
+        font-size: 2rem;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+       
+    }
+
+     .layout{
+        
+        /* display: grid;
+        grid-template-columns: 1fr 1 fr 1 fr;
+        grid-template-areas: 
+        "h h h"
+        "sb1 m sb2" 
+        "f f f";  */
+
+
+        /* This unit is dependent on the viewport's height. A value of “1vh” corresponds to 1% of the viewport height.
+         Ex: The value of “1vh” will be 10 pixels (px), and the value of “10vh” will be 100px if the viewport is 1200px wide and 1000px high 
+         100VH would represent 100% of the viewport's height, or the full height of the screen.
+          And of course, VW stands for “viewport width”*/
+          
+        display: grid;
+        grid-template-columns: repeat(5,1 fr);
+        grid-template-rows: 10vh 80vh 10vh;   
+        grid-template-areas: 
+        "h h h h h"
+        "sb1 m m m sb2" 
+        "f f f f f"; 
+    }
+ 
+    .header{
+        grid-area: h;
+    }
+    .sodebar1{
+        grid-area: sb1;
+    }
+    .main{
+        grid-area: m;
+    }
+    .sodebar2{
+        grid-area: sb2;
+    }
+    .footer{
+        grid-area: f;
+    }
+   

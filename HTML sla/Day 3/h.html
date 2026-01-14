@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+    
+        <label for="name">Name :</label>
+        <input type="name" id="name" name="name" required><br><br>
+
+        <label for="age">Age :</label>
+        <input type="number" id="age" name="number" max="70" min="18" required><br><br>
+
+        <label for="mail">E-mail :</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone number :</label>
+        <input type="tel" id="phone" name="phone" placeholder="AAAA555555" pattern="[A-Z]{4}[0-9]{6}" required><br><br>
+
+        <label for="dob">Date of Birth :</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="time">Time :</label>
+        <input type="time" name="time" id="time" required><br><br>
+        
+        <label for="month">Month :</label>
+        <input type="month" name="month" id="month"><br><br>
+
+        <label for="dt">Date of Birth (with time) :</label>
+        <input type="datetime-local" name="dt" id="dt" required><br><br>
+
+        <label for="res">Upload Resume :</label>
+        <input type="file" name="res" id="res"><br><br>
+
+        <label for="img">Image Input :</label><br><br>
+        <input type="image" src="sunset.jpeg" alt="Loading Error" name="img" id="img" width="200px"><br><br>
+
+        <input type="hidden" name="hid" id="hid">
+
+        <label for="check">Status -></label>
+        Graduated : <input type="checkbox" name="check" id="check" value="Graduated">
+        Graduated & Employed : <input type="checkbox" name="check" id="check" value="Graduated & Employed"><br><br>
+
+        <label>Active Subscription :</label>
+        <label for="yes">Yes</label>
+        <input type="radio" name="yes" id="yes">
+
+        <button type="submit">Submit</button>
+
+    
+    </form>
+</body>
+</html>

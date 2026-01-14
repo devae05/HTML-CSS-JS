@@ -1,0 +1,21 @@
+#row1{
+    display: flex;
+    width: 100%;
+}
+
+.row2{
+    display: grid;
+    grid-template-columns: 33% 33% 33% ;
+    width: 100%;
+}
+#bg{
+    background-color: grey;
+}
+.r1{
+    color: yellow;
+}
+.align{
+    width: 300px;
+    height: 100px;
+    margin: auto;
+}

@@ -1,0 +1,45 @@
+.outerbox{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:200px ;
+     grid-auto-rows: 100px;     /*all remaining rows do this */
+    gap: 20px;
+    /* align-items: center; */
+     justify-items: stretch;
+     
+    /* ----------- */
+    /* align-items: stretch;
+    align-items: start; */
+    /* align-items: end; */
+     /* align-items: center;  */
+   
+    /* justify-items: center;
+    justify-items: left;
+    justify-items: right; */
+    /* justify-items: stretch; */
+        
+    }
+    .box{
+        background-color: green;
+        color: white;
+        font-size: 4rem;
+        display: grid;   /*for centering the text */
+        justify-content: center;
+        align-items: center;
+    }
+    .box1
+    {
+        /* grid-column-start: 1;
+        grid-column-end:3 ; */
+        /* grid-column: 1/4; */
+        grid-column: 1/-1;
+        /* grid-column: span 3; */
+    }
+    /* .box2
+    {
+        grid-row: span 2;
+    }*/
+    .box3{
+        justify-self: right;
+    } 
+   

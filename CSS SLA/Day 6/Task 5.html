@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+        }
+        .layout{
+            display: grid;
+            grid-template-areas:
+            "s n "
+            "s m ";
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 7vh 1fr;
+        }
+        .nav{
+            display: inherit;
+            grid-area: n;
+            background-color: black;
+            
+        }
+        .nav a{
+            display: inherit;
+            color: white;
+            text-decoration: none; 
+        }
+    
+        .sidebar{
+            display: inherit;
+            grid-area: s;
+            background-color: gray;
+        }
+        .main{
+            display: inherit;
+            grid-area: m;
+            background-color: aquamarine;
+            grid-template-areas: 
+            "m m"
+            "m st";
+            grid-template-rows: 80vh 1fr;
+        }
+        .stats{
+            display: inherit;
+            grid-area: st;
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="layout">
+        
+        <nav class="nav">
+            <a href="">Home</a>
+        </nav>
+        <div class="sidebar">
+            Side
+        </div>
+        <main class="main">
+            main
+            <div class="stats">
+                stat
+            </div>
+        </main>
+    </div>
+</body>
+</html>

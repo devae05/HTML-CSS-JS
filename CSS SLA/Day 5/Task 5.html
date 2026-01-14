@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            display: flex;
+            height: 100vh;
+        }
+        *{
+            margin: 0%;
+        }
+        .main{
+            display: flex;
+            flex-flow: row wrap;
+            flex: 1;
+            align-items: center;
+            height: 100vh;
+            justify-content: space-between;
+            background-color: gray;
+        }
+        .box img{
+            width: 180px;
+        }
+        .sidebar{
+            display: flex;
+            flex-flow: column wrap;
+            flex: 0 0 250px;
+            height: 100vh;
+            background-color: black;
+            justify-content:center;
+            align-items: center;
+
+        }
+        .sidebar a{
+            color: white;
+            text-decoration: none;
+            padding:20px;
+            width: 80%;
+            border: solid white;
+        }
+        .sidebar a:hover{
+            color: black;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <a href="">Home</a>
+        <a href="">Book Ticket</a>
+        <a href="">Upcomming Movies</a>
+        <a href="">Chat with us</a>
+    </div>
+
+    <main class="main">
+        <div class="box">
+            <img src="hm.jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="rs.jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="sc.jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="jjk.jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="si.jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="mg.jpg" alt="">
+        </div>
+    </main>
+</body>
+</html>

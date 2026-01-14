@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML Forms</h1>
+    An HTML form is used to collect user input. The user input is most often sent to a server for processing.
+   
+ <!-- Attribute             Description
+
+action                  Specifies where to send the form-data when a form is submitted
+autocomplete            Specifies whether a form should have autocomplete on or off
+enctype                 Specifies how the form-data should be encoded when submitting it to the server (only for method="post")
+method                  Specifies the HTTP method to use when sending form-data Get/Post
+name                    Specifies the name of the form
+novalidate              Specifies that the form should not be validated when submitted
+target                  Specifies where to display the response that is received after submitting the form
+
+
+
+Notes on GET:
+
+Appends the form data to the URL, in name/value pairs
+NEVER use GET to send sensitive data! (the submitted form data is visible in the URL!)
+The length of a URL is limited (2048 characters)
+Useful for form submissions where a user wants to bookmark the result
+GET is good for non-secure data, like query strings in Google
+
+Notes on POST:
+
+Appends the form data inside the body of the HTTP request (the submitted form data is not shown in the URL)
+POST has no size limitations, and can be used to send large amounts of data.
+Form submissions with POST cannot be bookmarked
+Tip: Always use POST if the form data contains sensitive or personal information!
+
+
+The target attribute can have one of the following values:
+
+Value               Description
+_blank              The response is displayed in a new window or tab
+_self               The response is displayed in the current window
+_parent             The response is displayed in the parent frame
+_top                The response is displayed in the full body of the window
+framename           The response is displayed in a named iframe
+The default value is _self which means that the response will open in the current window.
+
+
+When autocomplete is on, the browser automatically complete values based on values that the user has entered before.
+
+The novalidate attribute is a boolean attribute.When present, it specifies that the form-data (input) should not be validated when submitted.
+
+ -->
+
+
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+
+<h1>HTML Attributes</h1>
+All HTML elements can have attributes and provide additional information about HTML elements.
+Attributes are always specified in the start tag and usually come in name/value pairs like: name="value"
+
+<h1>The href Attribute</h1>
+The <a> tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to.
+
+<h2>The href Attribute</h2>
+<p>HTML links are defined with the a tag. The link address is specified in the href attribute:</p>
+<a href="https://www.Google.com">Visit Google</a>
+
+
+<h1>The src Attribute</h1>
+The <img> tag is used to embed an image in an HTML page. The src attribute specifies the path to the image to be displayed:
+
+<h2>The src Attribute</h2>
+<p>HTML images are defined with the img tag, and the filename of the image source is specified in the src attribute:</p>
+<img src="/OceanSunset445.jfif" width="150" height="150" alt="Sun set in Ocean">
+
+
+<h1>The width and height Attributes </h1>
+The img tag should also contain the width and height attributes, which specify the width and height of the image (in pixels):
+
+<h1>The alt Attribute</h1>
+The required alt attribute for the img tag specifies an alternate text for an image, if the image for some reason cannot be displayed.
+This can be due to a slow connection, or an error in the src attribute, or if the user uses a screen reader.
+
+
+<h1>The style Attribute </h1>
+The style attribute is used to add styles to an element, such as color, font, size, and more.
+
+<h2>The style Attribute</h2>
+<p>The style attribute is used to add styles to an element, such as color:</p>
+
+<p style="color:red;">This is a red paragraph.</p>
+<p style="font-size:50px;">I am big</p>
+<p style="color:red; background-color:powderblue;">This is a red color paragraph with powderblue background.</p>
+
+<h1>The lang Attribute</h1>
+You should always include the lang attribute inside the html tag, to declare the language of the Web page. This is meant to assist search engines and browsers.
+The following example specifies English as the language:
+
+<html lang="en"></html>
+
+
+<h1>The title Attribute </h1>
+The title attribute defines some extra information about an element.
+The value of the title attribute will be displayed as a tooltip when you mouse over the element:
+
+<h2 title="I'm a header">The title Attribute</h2>
+<p title="I'm a paragraph">Mouse over this paragraph, to display the title attribute as a tooltip.</p>
+
+
+<h1>The class Attribute </h1>
+The class attribute is often used to point to a class name in a style sheet. It can also be used by JavaScript to access and manipulate elements with the specific class name.
+
+ 
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<style>
+.note {
+  font-size: 120%;
+  color: red;
+}
+</style>
+</head>
+<body>
+
+<h1>My <span class="note">Important</span> Heading</h1>
+<p>This is some <span class="note">important</span> text.</p>
+
+</body>
+</html> -->
+
+<h1>The id Attribute</h1>
+The HTML id attribute is used to specify a unique id for an HTML element.
+You cannot have more than one element with the same id in an HTML document.
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<style>
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h1 id="myHeader">My Header</h1>
+
+</body>
+</html> -->
+
+<h1>Difference Between Class and ID </h1>
+A class name can be used by multiple HTML elements, while an id name must only be used by one HTML element within the page:
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Style the element with the id "myHeader" */
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Style all elements with the class name "city" */
+.city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+
+<h2>Difference Between Class and ID</h2>
+<p>A class name can be used by multiple HTML elements, while an id name must only be used by one HTML element within the page:</p>
+
+<!-- An element with a unique id -->
+<h1 id="myHeader">My Cities</h1>
+
+<!-- Multiple elements with same class -->
+<h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+
+</body>
+</html> -->
+
+<h1>HTML Global Attributes</h1>
+Attribute         Description
+accesskey     -   a shortcut key to activate/focus an element
+class         -   one or more classnames for an element (refers to a class in a style sheet)
+contenteditable - Specifies whether the content of an element is editable or not
+dir             -   the text direction for the content in an element
+hidden          -   that an element is not yet, or is no longer, relevant
+id              -   a unique id for an element
+lang          -   the language of the element's content
+spellcheck      -   whether the element is to have its spelling and grammar checked or not
+style         -   an inline CSS style for an element
+tabindex      -   the tabbing order of an element
+title         -   extra information about an element
+
+
+    </pre>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <h1>HTML Iframes</h1>
+    <p>An HTML iframe is used to display a web page within a web page.</p>
+
+
+The HTML  &lt;iframe&gt; tag specifies an inline frame.
+An inline frame is used to embed another document within the current HTML document.
+
+<h2>HTML Iframes</h2>
+<p>You can use the height and width attributes to specify the size of the iframe:</p>
+
+<iframe src="table.html" height="200" width="800" title="Iframe Example"></iframe>
+
+
+
+<h2>HTML Iframes with CSS</h2>
+<p>You can also use the CSS height and width properties to specify the size of the iframe:</p>
+
+<iframe src="Day7 TableSamp.html" style="height:200px;width:300px" title="Iframe Example"></iframe>
+
+
+<h2>Remove the Iframe Border</h2>
+<p>To remove the default border of the iframe, use CSS:</p>
+
+<iframe src="Links.html" style="border:none;" title="Iframe Example"></iframe>
+
+
+
+<h2>Custom Iframe Border</h2>
+<p>With CSS, you can also change the size, style and color of the iframe's border:</p>
+
+<iframe src="Links.html" style="border:2px solid red;" title="Iframe Example"></iframe>
+
+
+
+</body>
+</html>​
