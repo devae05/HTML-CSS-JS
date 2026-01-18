@@ -1,0 +1,9 @@
+let n1 = window.prompt("Enter number 1 : ");
+let n2 = window.prompt("Enter nunber 2 : ");
+n1=parseInt(n1);
+n2=parseInt(n2);
+console.log(" Sum        = ",(n1+n2));
+console.log(" Difference = ",n1-n2);
+console.log(" Product    = ",n1*n2);
+console.log(" Quotient   = ",n1/n2);
+console.log(" Remainder  = ",n1%n2);
