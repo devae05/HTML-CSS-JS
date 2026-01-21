@@ -1,3 +1,6 @@
+let pr="";
+
 for(let i=1;i<=20;i++){
-    console.log(i);
+    pr=pr+i+" ";   
 }
+console.log(pr);
