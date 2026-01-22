@@ -1,10 +1,22 @@
 // 0 + 2 + 4 + 6 + ...
-let n=20;
-let j=0;
+let n = parseInt(prompt());
+let j=" + ";
+let a="";
 
-for(let i=0; i<=n; i++){
+for(let i=0; i<=n; i++)
+{
+    if(i==n)
+    {
+        if(i%2==0)
+        {
+            a = a + i;
+        }
+    }
+    else if(i%2==0)
+    {
+        a = a + i + j;
+    }  
     
-    if(i%2==0) j+=i; 
     
 }
-console.log(j);
+console.log(a);

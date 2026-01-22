@@ -1,19 +1,21 @@
 // 1 / 1! + 3 / 3! + 5 / 5!....
 
-let fact = 1;
-console.log(fact);
+let n = parseInt(prompt());
+let result="1 / ";
 
-for(let i = 1; i <= 10; i++){
-
-    fact = 1;
-
-    if(i % 2 != 0){
-
-        for(let z = i; z > 0; z--){
-
-            fact = fact * z;
-        }
-
-       console.log(fact+i+2);
+for(let i=1; i<=n; i+=2)
+{
+    if(n==i)
+    {
+        result = result + i + "! + " +(i+2);
+    }
+    else if(i==1)
+    {
+        result = result +i+ "! + " +(i+2) + " / ";
+    }
+    else{
+        result = result + i + "! + " +(i+2) + " / ";
     }
 }
+
+console.log(result);

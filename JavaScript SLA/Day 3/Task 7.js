@@ -1,12 +1,22 @@
 // 1 + 3 + 5 + 7 + 9.....
+let n = parseInt(prompt());
+let j=" + ";
+let a="";
 
-let n=20;
-let res=0;
-
-for(let i=0; i<=n; i++){
-
-    if(i % 2 != 0){
-        res+=i;
-    } 
+for(let i=0; i<=n; i++)
+{
+    if(i==n)
+    {
+        if(i%2!=0)
+        {
+            a = a + i;
+        }
+    }
+    else if(i%2!=0)
+    {
+        a = a + i + j;
+    }  
+    
+    
 }
-console.log(res);
+console.log(a);

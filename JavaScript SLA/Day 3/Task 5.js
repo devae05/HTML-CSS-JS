@@ -1,7 +1,14 @@
 // 1 + 2 + 3 + 4 + .....
-let n=10;
-let j=0;
+let n = parseInt(prompt());
+let j = " + ";
+let a = "";
 for(let i = 1; i<=n; i++){
-    j+=i;
+    
+    if(i == n){
+        a = a + i;
+    }
+    else{
+        a = a + i + j ;
+    }
 }
-console.log(j);
+console.log(a);

@@ -1,3 +1,11 @@
-for(let i = 1; i<=20; i+=2){
-    console.log(i);
+let n = parseInt(prompt());
+let a="";
+
+for(let i = 0; i<=n; i++)
+{
+    if(i % 2 != 0)
+    {
+        a = a + i + " ";
+    }
 }
+console.log(a);
