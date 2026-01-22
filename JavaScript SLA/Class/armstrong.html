@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+    <script>
+
+        let n = parseInt(prompt());
+        let arm = 0;
+        let temp = n;
+
+        for(; temp>0;)
+        {
+            z = parseInt(temp % 10);
+            arm = parseInt( arm + z * z * z);
+            temp = parseInt(temp / 10);
+        }
+        if(arm == n && n > 100)
+        { 
+            console.log(` ${n} is an armstrong number`);
+        }
+        else
+        {
+            console.log(` ${n} is not an armstrong number`);
+        }  
+    </script>
+
+</html>

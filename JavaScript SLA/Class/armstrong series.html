@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+    <script>
+        let arm = 0;
+        let n = 999;
+        let temp;
+    for(let j=0; j<=n; j++)
+    {
+        arm = 0;
+        temp = j;
+        for(let i=0; temp!=0; i++)
+        {
+            z = parseInt(temp % 10);
+            arm = parseInt( arm + z * z * z);
+            temp = parseInt(temp / 10);
+            
+        }
+        if(arm == j && j>=100)
+        { 
+        console.log(arm);
+        }
+    }
+
+        
+    </script>
+
+</html>

@@ -1,22 +1,29 @@
-    let am = 153;
-    let a=0;
-    let b=0;
-    let c=am;
+let n = parseInt(prompt());
 
-    console.log(` Given no : ${am}`);
+let ans = arms(n);
 
-    while(c > 0)
-    {
+console.log(`${n} is an Armstrong number - ${ans}`);
+
+function arms(am) 
+{
+    let a = 0;
+    let b = 0;
+    let c = am;
+
+    console.log(`Given no : ${am}`);
+
+    while (c > 0) {
         a = c % 10;
-        c=parseInt(c/10);
-        b=b+a*a*a;
+        c = parseInt(c / 10);
+        b = b + a * a * a;
     }
-    if(am==b)
+
+    if(am==b) 
     {
-        
-        console.log(` ${am} is an Armstrong number `);
-    }
+        return true;
+    } 
     else
     {
-        console.log(` ${am} is not a Armstrong number `);
+        return false;
     }
+}
