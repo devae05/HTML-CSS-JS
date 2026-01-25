@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    2.find out the given no is prime or not
+
+</body>
+
+<script>
+    let isPrime = (n)=>{
+        let z=0;
+        for(let i=1; i<=n; i++) if(n%i==0) z++;
+
+        if(z==2) return ` ${n} is Prime\n`;
+        else return `${n} not Prime\n`;
+    };
+
+    console.log(isPrime(7),isPrime(8),isPrime(9));
+</script>
+
+</html>

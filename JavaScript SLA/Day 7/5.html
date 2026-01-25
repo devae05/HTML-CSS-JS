@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    5.Sum of digit(1 + 2 + 3 + ...)
+
+</body>
+
+<script>
+    let sum = (s,e)=>{
+        let z=0;
+        let y=s;
+        while(s<=e){
+            z = z + s++;
+        }
+        return console.log(`Sum of ${y} to ${e} is ${z}`);
+    };
+
+    sum(1,5);
+    sum(5,10);
+</script>
+
+</html>
