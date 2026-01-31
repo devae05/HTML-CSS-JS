@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+let ar1 = [4,5,4,4,5,3,3,5,3,2,0,2,2];
+console.log(ar1);
+for(let i=0; i<ar1.length; i++)
+{
+    for(let j=i+1; j<ar1.length; j++)
+    {
+        if(ar1[i]==ar1[j])
+        {
+            ar1.splice(j,1);
+            j--;
+        }
+    }
+}
+console.log(ar1);
+
+
+</script>
+
+</html>

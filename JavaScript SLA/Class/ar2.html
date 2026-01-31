@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+    let maximus = e => Math.max(...e);
+    console.log(maximus([45,33,67,12,24]));
+    
+    let calculus = arr => arr.reduce((e,z)=> e+z);
+    console.log(calculus([6,7,9,0,1,1]));
+
+    let reversal = (arr) => arr.reverse();
+    console.log(reversal([1,2,3,4,5,6]));
+    
+    let scan = (arr) => arr.filter( e => e==1).length;
+    console.log(scan([1,0,1,1,0,0,0,1,0,1,1]));
+
+    let shrink = (arr) => arr.reduce((e,m) => e+m)/(arr.length);
+    console.log(shrink([81,89,91,86,84]));
+
+    let existence = (cont,dna="ab+") => cont.includes(dna);
+    console.log(existence(["o+","a+","ab+","o-"]));
+    
+</script>
+
+</html>

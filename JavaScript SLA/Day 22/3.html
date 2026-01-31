@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    let str1="listen";
+    let str2="silent";
+
+    console.log(str1);
+    console.log(str2);
+    
+    let sort = a =>{
+        for(let i=0; i<a.length; i++){
+            for(let j=i+1; j<a.length; j++){
+                if(a[i]>a[j]){
+                    let temp = a[i];
+                    a[i]=a[j];
+                    a[j]=temp;
+                }
+            }
+        }
+        return a.join('');
+    };
+    
+    let e = sort(str1.split(''));
+    let z = sort(str2.split(''));
+
+    if(e===z) console.log("Anagrams");
+    else console.log("Not anagrams");
+</script>
+
+</html>

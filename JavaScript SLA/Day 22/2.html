@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    let ar1 = [3,2,6,4,5];
+    let l1 = ar1.reduce((e,z) => e>z ? e : z);
+    let ar2 = [...ar1];
+    let i = ar2.indexOf(l1); 
+    ar2.splice(i,1);
+    let l2 = ar2.reduce((e,z) => e>z ? e : z);
+    console.log(ar1);
+    console.log("The second greatest number is",l2);
+    
+</script>
+
+</html>

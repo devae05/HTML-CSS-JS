@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    let ar1 = [4,6,4,4,6,5,5,5,4];
+    let Count = (ar)=>{
+        for(let i=0; i<ar.length; i++){
+            let c = 1;
+            for(let j=i+1; j<ar.length; j++){
+                if(ar[i]=== ar[j]){
+                    c++;
+                    ar.splice(j,1);
+                    j--;
+                }
+            }
+            console.log(`${ar[i]} occured ${c} times.`);
+        }
+    };
+    Count(ar1);
+</script>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    let n = [6,3,4,0,4,2,5,0,8];
+    let n1 = n.slice();
+    console.log(n);
+    let sort = a =>{
+        for(let i=0;i<a.length; i++){
+            let temp=0;
+            for(let j=i+1; j<a.length; j++){
+                if(a[i]>a[j]){
+                    temp=a[i];
+                    a[i]=a[j];
+                    a[j]=temp;
+                }
+            }
+        }
+        return a;
+    };
+    console.log(sort(n1));
+
+    for(let i=0; i<n1.length; i++){
+        for(let j=i+1; j<n1.length; j++){
+            if(n1[i]==n1[j]){
+                n1.splice(j,1);
+                j--;
+            }
+        }
+    }    
+    console.log(n1);
+    for(let i=0; i<n1.length; i++){
+        if(n1[i]!=i){
+            console.log(i);
+            n1.splice(i, 0, i);
+        }
+    }
+</script>
+
+</html>
