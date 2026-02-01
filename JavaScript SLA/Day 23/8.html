@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="p">HTML 4 was a significant version of the HyperText Markup Language (HTML) released by the W3C in the late 1990s, introducing key features like style sheets, scripting, frames, and better accessibility, with HTML 4.01 being its final revision before the focus shifted to XHTML and then HTML5, defining three main document types: Strict, Transitional, and Frameset, to separate structure from presentation and improve web standards. </p>
+
+    <button id="btn" onclick="change()">
+        Change
+    </button>
+
+    <script>
+        let p = document.getElementById("p");
+        function change(){
+            p.innerHTML="HTML5 is the fifth version of Hypertext Markup Language (HTML), a standard language used to structure webpages. It defines how content on a webpage should be structured and displayed. Here are some key points of HTML5.Provides multimedia support by embedding audio and video without plugins.Adds new form controls like date and email input types.Enables web storage to store data offline for better performance.Uses semantic elements such as <header> and <footer> for clearer structure.Delivers improved performance, especially on mobile devices.";
+        }
+    </script>
+</body>
+</html>
