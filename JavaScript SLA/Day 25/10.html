@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        class User{
+            constructor(username){
+                this.username=username;
+            }
+            login(){    
+               console.log(`${this.username} logged in successfully.`); 
+            }
+        }
+        class Admin extends User{
+            deleteUser(username){
+                console.log(`Username ${username} has been deleted.`)
+            }
+            login(admin){
+                console.log(`Admin ${admin} has logged in successfully.`);
+            } 
+        }
+
+        let u = new User("Murugan");
+        let a = new Admin();
+        u.login();
+        a.deleteUser("Kisore");
+        a.login("Rick");
+
+    </script>
+
+</body>
+</html>

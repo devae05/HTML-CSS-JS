@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        class Employee{
+            constructor(name,salary){
+                this.name=name;
+                this.salary=salary;
+            }
+            getDetails(){
+                console.log(`Emp Name :${this.name} & Salary = ${this.salary}`);
+            }
+        }
+        class Manager extends Employee{
+            constructor(name,salary,department){
+                super(name,salary);
+                this.department=department;
+            }
+            getDetails(){
+                super.getDetails();
+                console.log(`From ${this.department} department`);
+            }
+        }
+
+        let e = new Employee("kanye",20000);
+        e.getDetails();
+        let m = new Manager("kim",50000,"Cyber");
+        m.getDetails();
+
+    </script>
+    
+</body>
+</html>

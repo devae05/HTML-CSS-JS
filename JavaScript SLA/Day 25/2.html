@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Student{
+            constructor(name,marks){
+                this.name = name;
+                this.marks = marks;
+            }
+            getMarks(){
+                if(this.marks<=100 && this.marks>=90){
+                    console.log(`${this.name} secured A grade`);
+                }
+                else if(this.marks<90 && this.marks>=75){
+                    console.log(`${this.name} secured B grade`);
+                }
+                else if(this.marks<75 && this.marks>=50){
+                    console.log(`${this.name} secured C grade`);
+                }
+                else if(this.marks<50){
+                    console.log(`${this.name} has Failed`);
+                }
+                else{
+                    console.log(`Invalid Info`);
+                }
+            }
+        }
+
+        let s1 = new Student("Chand",89);
+        let s2 = new Student("Dev",60);
+        s1.getMarks();
+        s2.getMarks();
+
+    </script>
+</body>
+</html>

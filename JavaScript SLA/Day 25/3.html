@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        class BankAccount{
+            constructor(accountHolder,balance){
+                this.accountHolder = accountHolder;
+                this.balance = balance;
+            }
+            deposit(amount){
+                this.balance+=amount;
+                console.log(`${this.accountHolder}'s Amount Deposited Successfully`);
+            }
+            withdraw(amount){
+                if(this.balance-amount > 0){
+                    this.balance-=amount;
+                    console.log(`${this.accountHolder}'s Withdrawal Successful`);
+                }
+                else{
+                    console.log(`${this.accountHolder}'s Withdrawal of ${amount} Failed due to Insufficient Balance`);
+                }
+            }
+            checkBalance(){
+                console.log(`${this.accountHolder}'s Current Balance is Rs.${this.balance}`)
+            }
+        }
+
+        let acc1 = new BankAccount("Nas",100000);
+
+        acc1.deposit(1000);
+        acc1.withdraw(50000);
+        acc1.checkBalance();
+        acc1.withdraw(52000);
+        acc1.checkBalance();
+    </script>
+</html>
