@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        class User{
+            #password;
+            constructor(password="abc123"){
+                this.#password=password;
+            }
+            
+            changePassword(oldPass,newPass){
+                if(oldPass===this.#password){
+                    this.#password = newPass;
+                    console.log("Password changed successfully");
+                }
+                else{
+                    console.log("Wrong old password.");
+                }
+            }
+        }
+
+        const u = new User();
+        u.changePassword("abc123","michael");
+        u.changePassword("micel","sunset123");
+
+    </script>
+
+</body>
+</html>

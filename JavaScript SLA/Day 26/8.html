@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        class Employee{
+            constructor(basicPay, da, hra){
+                this.basicPay=basicPay;
+                this.da=da;
+                this.hra=hra;
+            }
+
+            calculateSalary(){
+                console.log(`Total Salary of employee = ${this.basicPay+this.da+this.hra}`);
+            }
+        }
+        class Manager extends Employee{
+            constructor(basicPay, da, hra, bonus){
+                super(basicPay,da,hra);
+                this.bonus=bonus;
+            }
+
+            calculateSalary(){
+                console.log(`Total Salary of manager = ${this.basicPay+this.da+this.hra+this.bonus}`);
+            }
+        }
+
+        const e = new Employee(20000,4000,1000);
+        e.calculateSalary();
+        const m = new Manager(35000,6000,1500,3000);
+        m.calculateSalary();
+    </script>
+
+</body>
+</html>

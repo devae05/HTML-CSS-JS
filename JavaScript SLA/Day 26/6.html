@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        class Shape{
+
+            area(...arr){
+                if(arr.length == 1){
+                    console.log("Area of Square = "+(arr[0]**2));
+                }
+                else if(arr.length == 2){
+                    console.log("Area of Rectangle = "+arr[0]*arr[1]);
+                }
+                else{
+                    console.log("Invalid");
+                }
+            }
+        }
+
+        let s = new Shape();
+        s.area(12);
+        s.area(6,7);
+        s.area(13);
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        class Welcome{
+
+            greet(...ar){
+                if(ar.length == 0){
+                    console.log(`Hello!`);
+                }
+                else if(ar.length == 1){
+                    console.log(`Hello, ${ar[0]}`);
+                }
+                else if(ar.length == 2){
+                    console.log(`${ar[0]}, ${ar[1]}`)
+                }
+            }
+        }
+
+        const w = new Welcome();
+        w.greet();
+        w.greet("Duncan");
+        w.greet("Good evening","Duncan",);
+    </script>
+
+</body>
+</html>

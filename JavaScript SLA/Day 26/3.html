@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        class Car{
+            #brand;
+            constructor(brand,speed){
+                this.#brand=brand;
+                this.speed=speed;
+            }
+
+            display(){
+                console.log(`The car is ${this.#brand} with max speed of ${this.speed}`);
+            }
+        }
+
+        const c = new Car("Nissan GT",300);
+        c.display();
+        c.speed=350;
+        c.display();
+        c.brand="Mahindra";
+        
+    </script>
+
+</body>
+</html>

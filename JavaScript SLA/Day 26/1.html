@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        class BankAccount{
+            #balance;
+            constructor(balance){
+                this.#balance=balance;
+            }
+            deposit(amount){
+                console.log(`${amount} deposited`);
+                this.#balance+=amount;
+            }
+            withdraw(amount){
+                if(amount<this.#balance){
+                    console.log(`${amount} withdrawn`);
+                    this.#balance-=amount;
+                }
+                else{
+                    console.log("Low balance. Cannot withdraw.");
+                }
+            }
+            getBalance(){
+                console.log(`Balance is ${this.#balance}`);
+            }
+        }
+
+        let b = new BankAccount(5000);
+        b.deposit(500);
+        b.getBalance();
+        b.withdraw(4000);
+        b.getBalance();
+        b.withdraw(2000);
+
+
+    </script>
+
+</body>
+</html>
