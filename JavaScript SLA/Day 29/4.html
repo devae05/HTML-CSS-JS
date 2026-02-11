@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getOrder() {
+            return new Promise(resolve => {
+            setTimeout(() => resolve("Order received"), 1000);
+          });
+        }
+
+        function processOrder() {
+            return new Promise(resolve => {
+            setTimeout(() => resolve("Order processed"), 1000);
+          });
+        }
+
+        function deliverOrder() {
+            return new Promise(resolve => {
+            setTimeout(() => resolve("Order delivered"), 1000);
+          });
+        }
+
+        async function runOrderFlow() {
+            console.log(await getOrder());
+            console.log(await processOrder());
+            console.log(await deliverOrder());
+        }
+
+      runOrderFlow();
+
+    </script>
+</body>
+</html>

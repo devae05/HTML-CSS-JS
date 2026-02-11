@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        async function loadProducts() {
+            console.log("Loading products...");
+
+            await new Promise(resolve => setTimeout(resolve, 2000));
+
+            const products = ["Laptop", "Mobile", "Tablet"];
+            console.log(products);
+        }
+
+        loadProducts();
+
+    </script>
+</body>
+</html>
