@@ -6,19 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-    
     <script>
+        let user = { name: "Raj", age: 25 };
 
+        let {name:fullName, age}= user;
 
-        function spread(...arr){
-
-            [first,last] = [arr[0],arr[arr.length-1]];
-            
-            console.log(first,last);
-        }
-        let arr = [10, 20, 30, 40, 50];
-        spread(...arr);
+        console.log(fullName,age);
     </script>
-
 </body>
 </html>

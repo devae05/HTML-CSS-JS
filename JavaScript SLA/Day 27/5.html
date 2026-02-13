@@ -6,19 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-    
     <script>
-
-
-        function spread(...arr){
-
-            [first,last] = [arr[0],arr[arr.length-1]];
+        function fun(...arr){
+            [arr2]=arr;
             
-            console.log(first,last);
+            console.log("Array = "+arr);
+            console.log("Copy array = "+arr2);
         }
-        let arr = [10, 20, 30, 40, 50];
-        spread(...arr);
+        let arr = [10, 20, 30];
+        fun(arr);
     </script>
-
 </body>
 </html>

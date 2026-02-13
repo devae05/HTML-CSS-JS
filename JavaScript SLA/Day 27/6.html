@@ -6,19 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-    
     <script>
+        let product = {
+            id: 1,
+            name: "Mobile",
+            price: 15000
+        };
 
-
-        function spread(...arr){
-
-            [first,last] = [arr[0],arr[arr.length-1]];
-            
-            console.log(first,last);
-        }
-        let arr = [10, 20, 30, 40, 50];
-        spread(...arr);
+        let {name, price} = product;
+        console.log(name, price);
     </script>
-
 </body>
 </html>
